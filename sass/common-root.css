@@ -1,0 +1,88 @@
+/* COLOR */
+:root {
+   --prime-text-color: #757575;
+   --second-text-color: #212121;
+   --white-text-color: #ffffff;
+   --prime-bg-color: #ffffff;
+   --second-bg-color: #f5f4fa;
+   --hero-bg-color: #9e8b8b;
+   --dark-bg-color: #2f303a;
+   --accent-color: #2196f3;
+   --btn-active-color: #188ce8;
+   --btn-close-border-color: rgba(0, 0, 0, 0.1);
+   --btn-close-ico-color: #000000;
+   --logo-dark-color: #000000;
+   --footer-link-color: rgba(255, 255, 255, 0.6);
+   --client-color: #afb1b8;
+   --soc-ico-color: #afb1b8;
+   --overlay-color: rgba(33, 150, 243, 0.9);
+   --placeholder-color: rgba(117, 117, 117, 0.5);
+   /* --btn-bg-filter: #F5F4FA; */
+
+   --cubic-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+body {
+   /* box-sizing: border-box; */
+   /* padding-top: 80px; */
+
+   background-color: var(--prime-bg-color);
+   color: var(--prime-text-color);
+   font-family: 'Roboto', sans-serif;
+
+   font-weight: 400;
+   font-size: 14px;
+   line-height: 1.7;
+   letter-spacing: 0.03em;
+}
+
+/* === COMMON === */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+   margin: 0;
+   padding: 0;
+}
+
+ul {
+   margin: 0;
+   padding: 0;
+}
+
+img {
+   display: block;
+   max-width: 100%;
+}
+
+.btn {
+   /* min-width: 216px; */
+   padding: 10px 32px;
+
+   font-family: inherit;
+
+   font-weight: 700;
+   font-size: 16px;
+   line-height: 1.88;
+   letter-spacing: 0.06em;
+   color: var(--white-text-color);
+   background-color: var(--accent-color);
+   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+
+   transition: background-color 2550ms var(--cubic-function);
+
+   border: 1px solid transparent;
+   border-radius: 4px;
+
+   background-color: var(--accent-color);
+   cursor: pointer;
+}
+
+.btn:hover,
+.btn:focus {
+   /* background-color: var(--btn-active-color); */
+   background-color: red;
+}
