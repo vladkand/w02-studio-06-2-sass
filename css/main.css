@@ -1,0 +1,115 @@
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+body {
+  color: #757575;
+  background-color: #ffffff;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+}
+
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.no-padding {
+  padding-top: 0;
+}
+
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  outline: 1px solid tomato;
+}
+
+.title {
+  font-weight: 700;
+  color: #212121;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 36px;
+  line-height: 1.17;
+}
+
+/* ----- FEATURE ----- */
+.feature__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-left: -30px;
+  margin-top: -30px;
+  -webkit-perspective: 1000px;
+          perspective: 1000px;
+}
+
+.feature__item {
+  position: relative;
+  -ms-flex-preferred-size: calc(25% - 30px);
+      flex-basis: calc(25% - 30px);
+  margin-left: 30px;
+  margin-top: 30px;
+  -webkit-animation-name: rotator;
+          animation-name: rotator;
+  -webkit-animation-duration: 3250ms;
+          animation-duration: 3250ms;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+.feature__item::before {
+  content: "";
+  display: block;
+  width: 270px;
+  height: 120px;
+  border-radius: 4px;
+  background-color: #f5f4fa;
+  background-repeat: no-repeat;
+  background-position: center;
+  /* background-size: contain; */
+}
+.feature__item:nth-child(1)::before {
+  background-image: url(../images/icons/feature01.svg);
+}
+.feature__item:nth-child(2)::before {
+  background-image: url(../images/icons/feature02.svg);
+}
+.feature__item:nth-child(3)::before {
+  background-image: url(../images/icons/feature03.svg);
+}
+.feature__item:nth-child(4)::before {
+  background-image: url(../images/icons/feature04.svg);
+}
+
+.feature__descr {
+  padding-top: 30px;
+}
+
+.feature__subtitle {
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+}
+
+.feature__text {
+  margin-top: 10px;
+}/*# sourceMappingURL=main.css.map */
