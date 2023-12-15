@@ -1,9 +1,16 @@
 //
 @import './utils/variables';
 @import './base/reset';
+@import './utils/mixin';
 @import './utils/hidden';
+
+// ===COMPONENT ===
 @import './components/common';
 @import './components/fonts';
+@import './components/logo';
+
 // === LAYOUT ===
-@import './layout/header';
+@import './layout/header/header';
+@import './layout/header/nav';
+@import './layout/header/contact';
 @import './layout/feature';

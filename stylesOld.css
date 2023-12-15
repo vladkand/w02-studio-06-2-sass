@@ -1,8 +1,5 @@
 /* === ROOT === */
 /* COLOR */
-:root {
-   /* --btn-bg-filter: #F5F4FA; */
-}
 
 /* === COMMON === */
 
@@ -31,10 +28,6 @@
    line-height: 1.17;
 }
 
-.visually-hidden {
-   position: fixed;
-   transform: scale(0);
-}
 /* ------------------ */
 
 /* ===== ANIMATIONs ===== */
@@ -68,48 +61,21 @@
 
 /* HEADER */
 
-.main-head {
-   /* position: fixed; */
-
-   border-bottom: 1px solid #ececec;
-   z-index: 2;
-   width: 100%;
-   top: 0;
-   left: 0;
-   background-color: #fff;
-}
-
-.hed-box {
-   display: flex;
-   align-items: center;
-}
-
 /* ==== Высота хедера ч-з padding для link ===== */
+
+/* ---logo--- */
+
+/* ---nav--- */
+
+.nav-list {
+   display: flex;
+   margin-left: 93px;
+}
+
 .nav-list .link {
    display: block;
    padding-top: 32px;
    padding-bottom: 32px;
-}
-
-/* ---logo--- */
-.logo {
-   font-family: 'Raleway';
-   font-weight: 700;
-   font-size: 26px;
-   line-height: 1.19;
-   letter-spacing: 0.03em;
-
-   color: var(--accent-color);
-}
-
-.part-dark {
-   color: var(--logo-dark-color);
-}
-
-/* ---nav--- */
-.nav-list {
-   display: flex;
-   margin-left: 93px;
 }
 
 .nav-list .item:not(:first-child) {
