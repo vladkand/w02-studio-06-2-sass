@@ -4,5 +4,12 @@
    color: $color-txt-white;
    background-color: $color-accent;
 
+   transition: background-color $transTemp;
+
    cursor: pointer;
+
+   &:focus,
+   &:hover {
+      background-color: $btn-active-color;
+   }
 }

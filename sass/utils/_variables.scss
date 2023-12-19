@@ -13,7 +13,7 @@ $color-logo-white: #ffffff;
 $color-link-header: #757575;
 
 // SOCIAL-COLOR
-$sicial-color: #afb1b8;
+$social-color: #afb1b8;
 
 // CLIENT-COLOR
 $client-color: #afb1b8;
@@ -37,3 +37,5 @@ $btn-close-border-color: rgba(0, 0, 0, 0.1);
 $btn-close-ico-color: #000000;
 
 $cubic-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+$transTemp: 500ms $cubic-function;

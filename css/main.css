@@ -54,7 +54,7 @@ body {
   font-weight: 400;
   font-size: 14px;
   line-height: 1.7;
-  letter-spacing: 0.03em;
+  letter-spacing: 0.42px;
 }
 
 .section {
@@ -80,7 +80,12 @@ body {
   display: inline-block;
   color: #ffffff;
   background-color: #2196f3;
+  -webkit-transition: background-color 500ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 500ms cubic-bezier(0.4, 0, 0.2, 1);
   cursor: pointer;
+}
+.btn:focus, .btn:hover {
+  background-color: #188ce8;
 }
 
 .title {
@@ -105,6 +110,50 @@ body {
 
 .logo__part--dark {
   color: #000000;
+}
+
+.logo__part--light {
+  color: #ffffff;
+}
+
+.social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: -10px;
+  margin-left: -10px;
+}
+
+.social__item {
+  margin-left: 10px;
+  margin-top: 10px;
+}
+
+.social__link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  color: #afb1b8;
+  -webkit-transition: all 500ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: all 500ms cubic-bezier(0.4, 0, 0.2, 1);
+  outline: 1px solid;
+}
+.social__link:focus, .social__link:hover {
+  color: #ffffff;
+  background-color: #2196f3;
+}
+
+.social__ico {
+  margin: auto;
+  fill: currentColor;
 }
 
 .header {
@@ -361,11 +410,57 @@ body {
   background: rgba(47, 48, 58, 0.8);
 }
 
-.clients {
-  background-color: beige;
+.team {
+  background-color: #f5f4fa;
 }
 
-.Clients__list {
+.team__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-top: 20px;
+  margin-left: -30px;
+}
+
+.team-list__item {
+  -ms-flex-preferred-size: calc(25% - 30px);
+      flex-basis: calc(25% - 30px);
+  margin-left: 30px;
+  margin-top: 30px;
+  -webkit-box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+          box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+  border-radius: 0px 0px 4px 4px;
+}
+
+.member__dscr {
+  padding: 30px 32px;
+  text-align: center;
+}
+
+.member__title {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 0.48px;
+}
+
+.member__txt {
+  margin-top: 10px;
+  font-size: 16px;
+  line-height: normal;
+  letter-spacing: 0.48px;
+}
+
+.member__social-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 16px;
+}
+
+.clients__list {
   margin-top: 50px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -384,6 +479,9 @@ body {
 .clients__item {
   -ms-flex-preferred-size: calc(16.6666666667% - 30px);
       flex-basis: calc(16.6666666667% - 30px);
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
 }
 
 .clients__link {
@@ -392,16 +490,61 @@ body {
   display: flex;
   color: #afb1b8;
   border: 1px solid #afb1b8;
-  -webkit-transition: all 500ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: all 500ms cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-transition: all 500ms cubic-bezier(0.4, 0, 0.2, 1), scale 500ms cubic-bezier(0.4, 0, 0.2, 1), border-color 500ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: all 500ms cubic-bezier(0.4, 0, 0.2, 1), scale 500ms cubic-bezier(0.4, 0, 0.2, 1), border-color 500ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .clients__link:focus, .clients__link:hover {
   color: #2196f3;
   border-color: #2196f3;
-  scale: 1.02;
+  scale: 1.03;
 }
 
 .clients__ico {
   margin: auto;
   fill: currentColor;
+}
+
+.footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: teal;
+}
+
+.footer__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+}
+
+.footer__item {
+  outline: 1px solid red;
+}
+.footer__item + .footer__item {
+  margin-left: 93px;
+}
+
+.footer__address {
+  margin-top: 20px;
+  font-style: inherit;
+}
+
+.address__item {
+  color: #ffffff;
+}
+.address__item + .address__item {
+  margin-top: 9px;
+  color: rgba(5, 5, 5, 0.6);
+}
+
+.address__title {
+  color: #ffffff;
+  font-family: Roboto;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.14;
+  letter-spacing: 0.42px;
+  text-transform: uppercase;
 }/*# sourceMappingURL=main.css.map */

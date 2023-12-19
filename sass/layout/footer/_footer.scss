@@ -1,0 +1,50 @@
+.footer {
+   padding-top: 60px;
+   padding-bottom: 60px;
+   background-color: teal;
+}
+
+.footer__wrapper {
+   display: flex;
+   align-items: baseline;
+}
+
+.footer__item {
+   & + & {
+      margin-left: 93px;
+   }
+
+   outline: 1px solid red;
+}
+
+.footer__address {
+   margin-top: 20px;
+
+   font-style: inherit;
+
+   //    font-family: Roboto;
+   // font-size: 14px;
+   // font-style: normal;
+   // font-weight: 400;
+}
+
+.address__item {
+   color: $color-txt-white;
+   & + & {
+      margin-top: 9px;
+
+      color: $color-txt-addres;
+   }
+}
+
+.address__title {
+   color: $color-txt-white;
+
+   font-family: Roboto;
+   font-size: 14px;
+   //    font-style: normal;
+   font-weight: 700;
+   line-height: 1.14;
+   letter-spacing: 0.42px;
+   text-transform: uppercase;
+}
