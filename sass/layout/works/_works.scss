@@ -16,7 +16,7 @@
 
 .works__list:hover .works__thumb {
    opacity: 1;
-   transform: rotateY(360deg);
+   transform: rotateY(-360deg);
 }
 
 .works-list__item {
