@@ -78,6 +78,7 @@ body {
 .btn {
   border-radius: 4px;
   display: inline-block;
+  font-weight: 700;
   color: #ffffff;
   background-color: #2196f3;
   -webkit-transition: background-color 500ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -129,6 +130,11 @@ body {
   margin-left: -10px;
 }
 
+.social--dark .social__link {
+  color: #ffffff;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
 .social__item {
   margin-left: 10px;
   margin-top: 10px;
@@ -144,7 +150,6 @@ body {
   color: #afb1b8;
   -webkit-transition: all 500ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: all 500ms cubic-bezier(0.4, 0, 0.2, 1);
-  outline: 1px solid;
 }
 .social__link:focus, .social__link:hover {
   color: #ffffff;
@@ -507,7 +512,7 @@ body {
 .footer {
   padding-top: 60px;
   padding-bottom: 60px;
-  background-color: teal;
+  background-color: #2f303a;
 }
 
 .footer__wrapper {
@@ -525,6 +530,11 @@ body {
 .footer__item + .footer__item {
   margin-left: 93px;
 }
+.footer__item strong {
+  display: block;
+  margin: 0;
+  padding: 0;
+}
 
 .footer__address {
   margin-top: 20px;
@@ -536,10 +546,10 @@ body {
 }
 .address__item + .address__item {
   margin-top: 9px;
-  color: rgba(5, 5, 5, 0.6);
+  color: rgba(255, 255, 255, 0.6);
 }
 
-.address__title {
+.footer__title {
   color: #ffffff;
   font-family: Roboto;
   font-size: 14px;
@@ -547,4 +557,55 @@ body {
   line-height: 1.14;
   letter-spacing: 0.42px;
   text-transform: uppercase;
+}
+
+.footer__social-box {
+  margin-top: 20px;
+}
+
+.footer__suscribe {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
+.footer__form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 20px;
+}
+
+.subscribe__input {
+  width: 358px;
+  padding: 15px 16px;
+  color: #ffffff;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+  background-color: #2f303a;
+  -webkit-box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+          box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+}
+
+.subscribe__btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: 12px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 20px;
+  font-size: 16px;
+  line-height: 1.88; /* 187.5% */
+  letter-spacing: 0.96px;
+}
+
+.subscribe__icon {
+  margin-left: 10px;
 }/*# sourceMappingURL=main.css.map */
