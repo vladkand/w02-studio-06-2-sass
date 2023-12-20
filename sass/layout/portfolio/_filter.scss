@@ -1,0 +1,45 @@
+//
+// .portfolio {
+//    background-color: beige;
+// }
+
+.filter {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+   margin-left: -8px;
+   margin-top: -15px;
+}
+
+.filter__item {
+   margin-left: 8px;
+   margin-top: 15px;
+}
+
+.filter__btn {
+   padding: 6px 22px;
+   min-width: 73px;
+
+   font-size: 16px;
+
+   font-weight: 500;
+   line-height: 1.63; /* 162.5% */
+   letter-spacing: 0.48px;
+
+   color: $color-txt-second;
+   background-color: $btn-filter-bg;
+   border-radius: 4px;
+
+   transition: all $transTemp;
+
+   &.active {
+      color: $color-txt-white;
+      background-color: $color-accent;
+   }
+
+   &:focus,
+   &:hover {
+      color: $color-txt-white;
+      background-color: $color-accent;
+   }
+}

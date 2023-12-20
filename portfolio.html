@@ -3,7 +3,364 @@
    <head>
       <meta charset="UTF-8" />
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      <title>Document</title>
+      <title>Portfolio-SASS</title>
+
+      <link rel="preconnect" href="https://fonts.googleapis.com" />
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+      <link
+         href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+         rel="stylesheet"
+      />
+
+      <link
+         rel="stylesheet"
+         href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
+         integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPWhm/TRtuPVc4WG6kUgjH6J03IBuG7JZPkcWMxJ5huwaBpOpnwYElP/m6wg=="
+         crossorigin="anonymous"
+         referrerpolicy="no-referrer"
+      />
+
+      <link
+         rel="stylesheet"
+         href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+      />
+
+      <link rel="stylesheet" href="./css/portfolio.min.css" />
    </head>
-   <body></body>
+   <body>
+      <header class="header">
+         <div class="header__wrapper container">
+            <a class="logo header__logo" id="top" href="./index.html"
+               >Web<span class="logo__part--dark">Studio</span>
+            </a>
+
+            <!--=== NAV =s==-->
+            <nav class="main-nav">
+               <ul class="nav-list list">
+                  <li class="nav-list__item">
+                     <a class="nav-list__link" href="./index.html">Студія</a>
+                  </li>
+                  <li class="nav-list__item">
+                     <a class="nav-list__link current" href="./portfolio.html"
+                        >Портфоліо</a
+                     >
+                  </li>
+                  <li class="nav-list__item">
+                     <a class="nav-list__link link" href="#footer-contact"
+                        >Контакти</a
+                     >
+                  </li>
+               </ul>
+            </nav>
+            <!-- nav-fin -->
+
+            <!--== CONTACT ==-->
+            <ul class="contact contaсt__list list">
+               <li class="contact__item">
+                  <a class="contact__link" href="mailto:info@devstudio.com">
+                     <svg class="contact__ico mail" width="16" height="12">
+                        <use href="./images/symbol.svg#mail"></use>
+                     </svg>
+                     <span>info@devstudio.com</span>
+                  </a>
+               </li>
+               <li class="contact__item">
+                  <a class="contact__link" href="tel:+380961111111">
+                     <svg class="contact__ico phone" width="12" height="16">
+                        <use href="./images/symbol.svg#phone"></use>
+                     </svg>
+                     <span> +38 096 111 11 11 </span>
+                  </a>
+               </li>
+            </ul>
+            <!-- contact-fin -->
+         </div>
+      </header>
+   </body>
+   <main>
+      <!-- ===== SELECT-BUTTONS ===== -->
+      <section class="section portfolio">
+         <div class="container">
+            <h1 class="visually-hidden">Портфоліо</h1>
+
+            <!-- === PART BTN-FILTERS === -->
+            <ul class="portfolio__filter filter">
+               <li class="filter__item">
+                  <button class="filter__btn btn active" type="button">
+                     Усі
+                  </button>
+               </li>
+
+               <li class="filter__item">
+                  <button class="filter__btn btn" type="button">
+                     Веб-сайти
+                  </button>
+               </li>
+
+               <li class="filter__item">
+                  <button class="filter__btn btn" type="button">Додатки</button>
+               </li>
+
+               <li class="filter__item">
+                  <button class="filter__btn btn" type="button">Дизайн</button>
+               </li>
+
+               <li class="filter__item">
+                  <button class="filter__btn btn" type="button">
+                     Маркетинг
+                  </button>
+               </li>
+            </ul>
+
+            <!-- ==== EXAMPLES ==== -->
+            <ul class="examples-list list">
+               <li class="item">
+                  <!-- === Технокряк === -->
+                  <!--  SCALE  -->
+                  <a class="examples-link link" href="">
+                     <div class="scale-thumb">
+                        <img
+                           src="./images/exampl-01.jpg"
+                           width="370"
+                           alt="ноутбук з зображенням сторінки сайту на моніторі"
+                        />
+
+                        <div class="basis-scale over-box"></div>
+                        <p class="scale-txt">
+                           Ресурс пропонує комплексні пропозиції з різним рівнем
+                           функціоналу та сервісів. Все це дозволить відвідувачу
+                           отримати вичерпні відомості про компанію чи приватну
+                           особу.
+                        </p>
+                     </div>
+
+                     <div class="card-descr">
+                        <h3 class="examples-title title">Технокряк</h3>
+                        <p class="examples-text">Веб-сайт</p>
+                     </div>
+                  </a>
+               </li>
+
+               <li class="item">
+                  <!-- === NEW-ORLEAN === -->
+
+                  <!--  ROTATE-PART -->
+                  <a class="examples-link link scene" href="">
+                     <div class="flip">
+                        <div class="flip__item flip--front">
+                           <img
+                              src="./images/exampl-02.jpg"
+                              width="370"
+                              alt="два баскетболісти з м'ячем"
+                           />
+                        </div>
+
+                        <div class="flip__item flip--back over-box">
+                           Ресурс пропонує комплексні пропозиції з різним рівнем
+                           функціоналу та сервісів. Все це дозволить відвідувачу
+                           отримати вичерпні відомості про компанію чи приватну
+                           особу.
+                        </div>
+                     </div>
+
+                     <div class="card-descr">
+                        <h3 class="examples-title title">
+                           Постер
+                           <span lang="en">New Orlean vs Golden Star</span>
+                        </h3>
+                        <p class="examples-text">Дизайн</p>
+                     </div>
+                  </a>
+               </li>
+
+               <li class="item scene">
+                  <!-- Seafood === FLIP-FULL === -->
+
+                  <a class="examples-link link full-flip" href="/">
+                     <div class="thumb full-flip__item flip--front">
+                        <img
+                           src="./images/exampl-03.jpg"
+                           width="370"
+                           alt="стилізоване зображення риби з написом"
+                        />
+                        <div class="card-descr">
+                           <h3 class="examples-title title">
+                              Ресторан <span lang="en">Seafood</span>
+                           </h3>
+                           <p class="examples-text">Додаток</p>
+                        </div>
+                     </div>
+
+                     <div class="full-flip__item full-flip--back over-box">
+                        <p>
+                           Ресурс пропонує комплексні пропозиції з різним рівнем
+                           функціоналу та сервісів. Все це дозволить відвідувачу
+                           отримати вичерпні відомості про компанію чи приватну
+                           особу.
+                        </p>
+                     </div>
+                  </a>
+               </li>
+
+               <li class="item">
+                  <a class="examples-link link" href="/">
+                     <div class="thumb thumb-over">
+                        <img
+                           src="./images/exampl-04.jpg"
+                           width="370"
+                           alt="зображення навушників"
+                        />
+                        <p class="over over-box">
+                           Ресурс пропонує комплексні пропозиції з різним рівнем
+                           функціоналу та сервісів. Все це дозволить відвідувачу
+                           отримати вичерпні відомості про компанію чи приватну
+                           особу.
+                        </p>
+                     </div>
+
+                     <div class="card-descr">
+                        <h3 class="examples-title title">
+                           Проєкт <span lang="en">Prime</span>
+                        </h3>
+                        <p class="examples-text">Маркетинг</p>
+                     </div>
+                  </a>
+               </li>
+
+               <li class="item">
+                  <!-- === OVER-EFFECT === -->
+
+                  <a class="examples-link link" href="/">
+                     <div class="thumb thumb-over">
+                        <img
+                           src="./images/exampl-05.jpg"
+                           width="370"
+                           alt="зображення двох коробок для пакування"
+                        />
+
+                        <p class="over over-box">
+                           Ресурс пропонує комплексні пропозиції з різним рівнем
+                           функціоналу та сервісів. Все це дозволить відвідувачу
+                           отримати вичерпні відомості про компанію чи приватну
+                           особу.
+                        </p>
+                     </div>
+
+                     <div class="card-descr">
+                        <h3 class="examples-title title">
+                           Проєкт <span lang="en">Boxes</span>
+                        </h3>
+                        <p class="examples-text">Додаток</p>
+                     </div>
+                  </a>
+               </li>
+
+               <li class="item">
+                  <!-- Inspiration has no Borders -->
+                  <a class="examples-link link" href="/">
+                     <div class="thumb thumb-over">
+                        <img
+                           src="./images/exampl-06.jpg"
+                           width="370"
+                           alt="монітор з зображенням сторінки сайту"
+                        />
+
+                        <p class="over over-box">
+                           Ресурс пропонує комплексні пропозиції з різним рівнем
+                           функціоналу та сервісів. Все це дозволить відвідувачу
+                           отримати вичерпні відомості про компанію чи приватну
+                           особу.
+                        </p>
+                     </div>
+
+                     <div class="card-descr">
+                        <h3 class="examples-title title">
+                           <span lang="en">Inspiration has no Borders</span>
+                        </h3>
+                        <p class="examples-text">Веб-сайт</p>
+                     </div>
+                  </a>
+               </li>
+
+               <li class="item">
+                  <!-- Limited Edition -->
+                  <a class="examples-link link" href="">
+                     <div class="thumb thumb-over">
+                        <img
+                           src="./images/exampl-07.jpg"
+                           width="370"
+                           alt="зображення розвороту журналу з картинками"
+                        />
+
+                        <p class="over over-box">
+                           Ресурс пропонує комплексні пропозиції з різним рівнем
+                           функціоналу та сервісів. Все це дозволить відвідувачу
+                           отримати вичерпні відомості про компанію чи приватну
+                           особу.
+                        </p>
+                     </div>
+
+                     <div class="card-descr">
+                        <h3 class="examples-title title">
+                           Видання <span lang="en">Limited Edition</span>
+                        </h3>
+                        <p class="examples-text">Дизайн</p>
+                     </div>
+                  </a>
+               </li>
+
+               <li class="item">
+                  <!-- LAB -->
+                  <a class="examples-link link" href="">
+                     <div class="thumb thumb-over">
+                        <img
+                           src="./images/exampl-08.jpg"
+                           width="370"
+                           alt="зображення бірки з написом"
+                        />
+
+                        <p class="over over-box">
+                           Ресурс пропонує комплексні пропозиції з різним рівнем
+                           функціоналу та сервісів. Все це дозволить відвідувачу
+                           отримати вичерпні відомості про компанію чи приватну
+                           особу.
+                        </p>
+                     </div>
+
+                     <div class="card-descr">
+                        <h3 class="examples-title title">
+                           Проєкт <span lang="en">LAB</span>
+                        </h3>
+                        <p class="examples-text">Маркетинг</p>
+                     </div>
+                  </a>
+               </li>
+
+               <li class="item">
+                  <!-- Growing Business -->
+                  <a class="examples-link link" href="/">
+                     <div class="thumb thumb-over">
+                        <img
+                           src="./images/exampl-09.jpg"
+                           width="370"
+                           alt="руки людини набирають текст на клавіатурі ноутбука"
+                        />
+                        <p class="over over-box">
+                           Ресурс пропонує комплексні пропозиції з різним рівнем
+                           функціоналу та сервісів. Все це дозволить відвідувачу
+                           отримати вичерпні відомості про компанію чи приватну
+                           особу.
+                        </p>
+                     </div>
+
+                     <div class="card-descr">
+                        <h3 class="examples-title title">Growing Business</h3>
+                        <p class="examples-text">Додаток</p>
+                     </div>
+                  </a>
+               </li>
+            </ul>
+         </div>
+      </section>
+   </main>
 </html>
