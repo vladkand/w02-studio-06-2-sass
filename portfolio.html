@@ -78,7 +78,7 @@
       </header>
    </body>
    <main>
-      <!-- ===== SELECT-BUTTONS ===== -->
+      <!-- ===== portfolio ===== -->
       <section class="section portfolio">
          <div class="container">
             <h1 class="visually-hidden">Портфоліо</h1>
@@ -111,44 +111,48 @@
                   </button>
                </li>
             </ul>
+            <!-- === BTN-FILTERS fin === -->
 
             <!-- ==== EXAMPLES ==== -->
             <ul class="examples portfolio__list">
+               <!-- === Технокряк === -->
+
                <li class="examples__item card">
-                  <!-- === Технокряк === -->
-                  <!--  SCALE  -->
                   <a class="card__link scene" href="">
-                     <div class="card__thumb scale-thumb">
-                        <img
-                           src="./images/exampl-01.jpg"
-                           width="370"
-                           height="294"
-                           alt="ноутбук з зображенням сторінки сайту на моніторі"
-                        />
+                     <div class="card__decor">
+                        <div class="card__thumb flip--front">
+                           <img
+                              src="./images/exampl-01.jpg"
+                              width="370"
+                              height="294"
+                              alt="ноутбук з зображенням сторінки сайту на моніторі"
+                           />
 
-                        <div class="basis-scale over-box"></div>
-                        <p class="card__txt scale-txt">
-                           Ресурс пропонує комплексні пропозиції з різним рівнем
-                           функціоналу та сервісів. Все це дозволить відвідувачу
-                           отримати вичерпні відомості про компанію чи приватну
-                           особу.
-                        </p>
+                           <div class="basis-scale card__banner flip--back">
+                              <p class="card__txt scale-txt">
+                                 Ресурс пропонує комплексні пропозиції з різним
+                                 рівнем функціоналу та сервісів. Все це
+                                 дозволить відвідувачу отримати вичерпні
+                                 відомості про компанію чи приватну особу.
+                              </p>
+                           </div>
+                        </div>
                      </div>
-
-                     <div class="card__dscr example">
+                     <div class="card__dscr">
                         <h3 class="card__title title">Технокряк</h3>
                         <p class="card__name">Веб-сайт</p>
                      </div>
                   </a>
                </li>
+               <!-- === -->
 
+               <!-- === NEW-ORLEAN === -->
                <li class="examples__item card">
-                  <!-- === NEW-ORLEAN === -->
-
-                  <!--  ROTATE-PART -->
                   <a class="card__link scene" href="">
-                     <div class="flip">
-                        <div class="flip__item flip--front">
+                     <div class="card__decor"></div>
+
+                     <div class="card__dscr">
+                        <div class="card__thumb flip--front">
                            <img
                               src="./images/exampl-02.jpg"
                               width="370"
@@ -157,15 +161,14 @@
                            />
                         </div>
 
-                        <div class="flip__item flip--back over-box">
-                           Ресурс пропонує комплексні пропозиції з різним рівнем
-                           функціоналу та сервісів. Все це дозволить відвідувачу
-                           отримати вичерпні відомості про компанію чи приватну
-                           особу.
+                        <div class="basis-scale over-box flip--back">
+                           <p class="card__txt scale-txt">
+                              Ресурс пропонує комплексні пропозиції з різним
+                              рівнем функціоналу та сервісів. Все це дозволить
+                              відвідувачу отримати вичерпні відомості про
+                              компанію чи приватну особу.
+                           </p>
                         </div>
-                     </div>
-
-                     <div class="card-descr">
                         <h3 class="examples-title title">
                            Постер
                            <span lang="en">New Orlean vs Golden Star</span>
@@ -174,84 +177,98 @@
                      </div>
                   </a>
                </li>
+               <!-- === -->
 
+               <!--  === Seafood === -->
                <li class="examples__item card scene">
-                  <!-- Seafood === FLIP-FULL === -->
-
                   <a class="card__link scene" href="">
-                     <div class="thumb full-flip__item flip--front">
-                        <img
-                           src="./images/exampl-03.jpg"
-                           width="370"
-                           height="294"
-                           alt="стилізоване зображення риби з написом"
-                        />
-                        <div class="card-descr">
-                           <h3 class="examples-title title">
-                              Ресторан <span lang="en">Seafood</span>
-                           </h3>
-                           <p class="examples-text">Додаток</p>
+                     <div class="card__decor">
+                        <div class="card__thumb flip--front">
+                           <img
+                              src="./images/exampl-03.jpg"
+                              width="370"
+                              height="294"
+                              alt="стилізоване зображення риби з написом"
+                           />
+                        </div>
+
+                        <div class="basis-scale over-box flip--back">
+                           <p class="card__txt">
+                              Ресурс пропонує комплексні пропозиції з різним
+                              рівнем функціоналу та сервісів. Все це дозволить
+                              відвідувачу отримати вичерпні відомості про
+                              компанію чи приватну особу.
+                           </p>
                         </div>
                      </div>
 
-                     <div class="full-flip__item full-flip--back over-box">
-                        <p>
-                           Ресурс пропонує комплексні пропозиції з різним рівнем
-                           функціоналу та сервісів. Все це дозволить відвідувачу
-                           отримати вичерпні відомості про компанію чи приватну
-                           особу.
-                        </p>
+                     <div class="card__dscr">
+                        <h3 class="examples-title title">
+                           Ресторан <span lang="en">Seafood</span>
+                        </h3>
+                        <p class="examples-text">Додаток</p>
                      </div>
                   </a>
                </li>
+               <!-- === -->
 
+               <!-- === Prime === -->
                <li class="examples__item card">
                   <a class="card__link scene" href="">
-                     <div class="thumb thumb-over">
-                        <img
-                           src="./images/exampl-04.jpg"
-                           width="370"
-                           height="294"
-                           alt="зображення навушників"
-                        />
-                        <p class="over over-box">
-                           Ресурс пропонує комплексні пропозиції з різним рівнем
-                           функціоналу та сервісів. Все це дозволить відвідувачу
-                           отримати вичерпні відомості про компанію чи приватну
-                           особу.
-                        </p>
+                     <div class="card__decor">
+                        <div class="card__thumb flip--front">
+                           <img
+                              src="./images/exampl-04.jpg"
+                              width="370"
+                              height="294"
+                              alt="зображення навушників"
+                           />
+                        </div>
+
+                        <div class="basis-scale over-box flip--back">
+                           <p class="card__txt scale-txt">
+                              Ресурс пропонує комплексні пропозиції з різним
+                              рівнем функціоналу та сервісів. Все це дозволить
+                              відвідувачу отримати вичерпні відомості про
+                              компанію чи приватну особу.
+                           </p>
+                        </div>
                      </div>
 
-                     <div class="card-descr">
+                     <div class="card__dscr">
                         <h3 class="examples-title title">
-                           Проєкт <span lang="en">Prime</span>
+                           Проeкт <span lang="en">Prime</span>
                         </h3>
                         <p class="examples-text">Маркетинг</p>
                      </div>
                   </a>
                </li>
+               <!-- === -->
 
+               <!-- === Boxes === -->
                <li class="examples__item card">
-                  <!-- === OVER-EFFECT === -->
-
                   <a class="card__link scene" href="">
-                     <div class="thumb thumb-over">
-                        <img
-                           src="./images/exampl-05.jpg"
-                           width="370"
-                           height="294"
-                           alt="зображення двох коробок для пакування"
-                        />
+                     <div class="card__decor">
+                        <div class="card__thumb flip--front">
+                           <img
+                              src="./images/exampl-05.jpg"
+                              width="370"
+                              height="294"
+                              alt="зображення двох коробок для пакування"
+                           />
+                        </div>
 
-                        <p class="over over-box">
-                           Ресурс пропонує комплексні пропозиції з різним рівнем
-                           функціоналу та сервісів. Все це дозволить відвідувачу
-                           отримати вичерпні відомості про компанію чи приватну
-                           особу.
-                        </p>
+                        <div class="basis-scale over-box flip--back">
+                           <p class="card__txt scale-txt">
+                              Ресурс пропонує комплексні пропозиції з різним
+                              рівнем функціоналу та сервісів. Все це дозволить
+                              відвідувачу отримати вичерпні відомості про
+                              компанію чи приватну особу.
+                           </p>
+                        </div>
                      </div>
 
-                     <div class="card-descr">
+                     <div class="card__dscr">
                         <h3 class="examples-title title">
                            Проєкт <span lang="en">Boxes</span>
                         </h3>
@@ -259,27 +276,31 @@
                      </div>
                   </a>
                </li>
+               <!--  === -->
 
+               <!-- === Inspiration has no Borders === -->
                <li class="examples__item card">
-                  <!-- Inspiration has no Borders -->
                   <a class="card__link scene" href="">
-                     <div class="thumb thumb-over">
-                        <img
-                           src="./images/exampl-06.jpg"
-                           width="370"
-                           height="294"
-                           alt="монітор з зображенням сторінки сайту"
-                        />
-
-                        <p class="over over-box">
-                           Ресурс пропонує комплексні пропозиції з різним рівнем
-                           функціоналу та сервісів. Все це дозволить відвідувачу
-                           отримати вичерпні відомості про компанію чи приватну
-                           особу.
-                        </p>
+                     <div class="card__decor">
+                        <div class="card__thumb flip--front">
+                           <img
+                              src="./images/exampl-06.jpg"
+                              width="370"
+                              height="294"
+                              alt="монітор з зображенням сторінки сайту"
+                           />
+                        </div>
+                        <div class="basis-scale over-box flip--back">
+                           <p class="card__txt scale-txt">
+                              Ресурс пропонує комплексні пропозиції з різним
+                              рівнем функціоналу та сервісів. Все це дозволить
+                              відвідувачу отримати вичерпні відомості про
+                              компанію чи приватну особу.
+                           </p>
+                        </div>
                      </div>
 
-                     <div class="card-descr">
+                     <div class="card__dscr">
                         <h3 class="examples-title title">
                            <span lang="en">Inspiration has no Borders</span>
                         </h3>
@@ -287,27 +308,31 @@
                      </div>
                   </a>
                </li>
+               <!-- === -->
 
+               <!-- === Limited Edition === -->
                <li class="examples__item card">
-                  <!-- Limited Edition -->
                   <a class="card__link scene" href="">
-                     <div class="thumb thumb-over">
-                        <img
-                           src="./images/exampl-07.jpg"
-                           width="370"
-                           height="294"
-                           alt="зображення розвороту журналу з картинками"
-                        />
-
-                        <p class="over over-box">
-                           Ресурс пропонує комплексні пропозиції з різним рівнем
-                           функціоналу та сервісів. Все це дозволить відвідувачу
-                           отримати вичерпні відомості про компанію чи приватну
-                           особу.
-                        </p>
+                     <div class="card__decor">
+                        <div class="card__thumb flip--front">
+                           <img
+                              src="./images/exampl-07.jpg"
+                              width="370"
+                              height="294"
+                              alt="зображення розвороту журналу з картинками"
+                           />
+                        </div>
+                        <div class="basis-scale over-box flip--back">
+                           <p class="card__txt scale-txt">
+                              Ресурс пропонує комплексні пропозиції з різним
+                              рівнем функціоналу та сервісів. Все це дозволить
+                              відвідувачу отримати вичерпні відомості про
+                              компанію чи приватну особу.
+                           </p>
+                        </div>
                      </div>
 
-                     <div class="card-descr">
+                     <div class="card__dscr">
                         <h3 class="examples-title title">
                            Видання <span lang="en">Limited Edition</span>
                         </h3>
@@ -315,27 +340,31 @@
                      </div>
                   </a>
                </li>
+               <!--  -->
 
+               <!-- === LAB === -->
                <li class="examples__item card">
-                  <!-- LAB -->
                   <a class="card__link scene" href="">
-                     <div class="thumb thumb-over">
-                        <img
-                           src="./images/exampl-08.jpg"
-                           width="370"
-                           height="294"
-                           alt="зображення бірки з написом"
-                        />
-
-                        <p class="over over-box">
-                           Ресурс пропонує комплексні пропозиції з різним рівнем
-                           функціоналу та сервісів. Все це дозволить відвідувачу
-                           отримати вичерпні відомості про компанію чи приватну
-                           особу.
-                        </p>
+                     <div class="card__decor">
+                        <div class="card__thumb">
+                           <img
+                              src="./images/exampl-08.jpg"
+                              width="370"
+                              height="294"
+                              alt="зображення бірки з написом"
+                           />
+                        </div>
+                        <div class="basis-scale over-box flip--back">
+                           <p class="card__txt scale-txt">
+                              Ресурс пропонує комплексні пропозиції з різним
+                              рівнем функціоналу та сервісів. Все це дозволить
+                              відвідувачу отримати вичерпні відомості про
+                              компанію чи приватну особу.
+                           </p>
+                        </div>
                      </div>
 
-                     <div class="card-descr">
+                     <div class="card__dscr">
                         <h3 class="examples-title title">
                            Проєкт <span lang="en">LAB</span>
                         </h3>
@@ -343,32 +372,37 @@
                      </div>
                   </a>
                </li>
+               <!-- === -->
 
+               <!-- === Growing Business === -->
                <li class="examples__item card">
-                  <!-- Growing Business -->
-
                   <a class="card__link scene" href="">
-                     <div class="thumb thumb-over">
-                        <img
-                           src="./images/exampl-09.jpg"
-                           width="370"
-                           height="294"
-                           alt="руки людини набирають текст на клавіатурі ноутбука"
-                        />
-                        <p class="over over-box">
-                           Ресурс пропонує комплексні пропозиції з різним рівнем
-                           функціоналу та сервісів. Все це дозволить відвідувачу
-                           отримати вичерпні відомості про компанію чи приватну
-                           особу.
-                        </p>
+                     <div class="card__decor">
+                        <div class="card__thumb">
+                           <img
+                              src="./images/exampl-09.jpg"
+                              width="370"
+                              height="294"
+                              alt="руки людини набирають текст на клавіатурі ноутбука"
+                           />
+                        </div>
+                        <div class="basis-scale over-box flip--back">
+                           <p class="card__txt scale-txt">
+                              Ресурс пропонує комплексні пропозиції з різним
+                              рівнем функціоналу та сервісів. Все це дозволить
+                              відвідувачу отримати вичерпні відомості про
+                              компанію чи приватну особу.
+                           </p>
+                        </div>
                      </div>
 
-                     <div class="card-descr">
+                     <div class="card__dscr">
                         <h3 class="examples-title title">Growing Business</h3>
                         <p class="examples-text">Додаток</p>
                      </div>
                   </a>
                </li>
+               <!-- === -->
             </ul>
          </div>
       </section>
