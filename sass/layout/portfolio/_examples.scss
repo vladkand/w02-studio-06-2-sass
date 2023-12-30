@@ -43,6 +43,12 @@
 
    background-color: rgba(33, 150, 243, 0.9);
 
+   transition: all $transTemp;
+
+   .card__link:hover & {
+      transform: translateY(0);
+   }
+
    // opacity: 0;
 }
 

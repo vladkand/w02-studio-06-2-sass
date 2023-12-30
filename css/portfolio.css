@@ -348,6 +348,12 @@ body {
   -webkit-transform: translateY(101%);
           transform: translateY(101%);
   background-color: rgba(33, 150, 243, 0.9);
+  -webkit-transition: all 500ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: all 500ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.card__link:hover .card__banner {
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
 }
 
 .card__txt {
