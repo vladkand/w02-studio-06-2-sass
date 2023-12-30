@@ -385,4 +385,105 @@ body {
   line-height: 30px; /* 187.5% */
   letter-spacing: 0.48px;
   color: #757575;
+}
+
+.footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: #2f303a;
+}
+
+.footer__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+}
+
+.footer__item {
+  outline: 1px solid red;
+}
+.footer__item + .footer__item {
+  margin-left: 93px;
+}
+.footer__item strong {
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+
+.footer__address {
+  margin-top: 20px;
+  font-style: inherit;
+}
+
+.address__item {
+  color: #ffffff;
+}
+.address__item + .address__item {
+  margin-top: 9px;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.footer__title {
+  color: #ffffff;
+  font-family: Roboto;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.14;
+  letter-spacing: 0.42px;
+  text-transform: uppercase;
+}
+
+.footer__social-box {
+  margin-top: 20px;
+}
+
+.footer__suscribe {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
+.footer__form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 20px;
+}
+
+.subscribe__input {
+  width: 358px;
+  padding: 15px 16px;
+  color: #ffffff;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+  background-color: #2f303a;
+  -webkit-box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+          box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+}
+
+.subscribe__btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: 12px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 20px;
+  font-size: 16px;
+  line-height: 1.88; /* 187.5% */
+  letter-spacing: 0.96px;
+}
+
+.subscribe__icon {
+  margin-left: 10px;
 }/*# sourceMappingURL=portfolio.css.map */
