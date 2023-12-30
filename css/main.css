@@ -100,6 +100,22 @@ body {
   line-height: 1.17;
 }
 
+.modal {
+  width: 528px;
+  padding: 40px;
+  background-color: rgb(209, 192, 169);
+}
+
+.form {
+  outline: 1px solid red;
+  background-color: #fff;
+}
+
+.form__title {
+  display: block;
+  text-align: center;
+}
+
 .logo {
   font-family: "Raleway";
   font-weight: 700;
