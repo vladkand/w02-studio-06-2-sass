@@ -161,13 +161,16 @@ body {
   fill: currentColor;
 }
 
+.backdrop {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
 .modal {
   width: 528px;
   padding: 40px;
-  outline: 1px solid red;
-}
-
-.form {
+  background-color: #ffffff;
   outline: 1px solid red;
 }
 
@@ -201,8 +204,9 @@ body {
       -ms-flex-direction: column;
           flex-direction: column;
 }
-.form__label span {
-  outline: 1px solid green;
+.form__label:activ {
+  outline-color: #2196f3;
+  border-color: #2196f3;
 }
 
 .form__input {
@@ -210,14 +214,28 @@ body {
   padding-left: 42px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
+  color: #757575;
+}
+.form__input:hover {
+  cursor: pointer;
+  border-color: #2196f3;
+}
+.form__input:focus {
+  outline-color: #2196f3;
+  border-color: #2196f3;
 }
 
-.field__ico {
+.form__ico {
   position: absolute;
-  top: 11px;
+  top: 50%;
   left: 12px;
   width: 18px;
   height: 18px;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+.form__input:hover ~ .form__ico {
+  fill: #2196f3;
 }
 
 .field__name {
@@ -227,10 +245,7 @@ body {
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
   color: #757575;
-  font-family: Roboto;
   font-size: 12px;
-  font-style: normal;
-  font-weight: 400;
   line-height: normal;
   letter-spacing: 0.12px;
   -webkit-transition: -webkit-transform 500ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -238,9 +253,42 @@ body {
   transition: transform 500ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: transform 500ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 500ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.form__field:hover .field__name {
-  -webkit-transform: translate(-42px, -40px);
-          transform: translate(-42px, -40px);
+.form__input:not(:-moz-placeholder-shown) ~ .field__name {
+  transform: translate(-42px, -39px);
+}
+.form__input:not(:-ms-input-placeholder) ~ .field__name {
+  transform: translate(-42px, -39px);
+}
+.form__input:focus ~ .field__name, .form__input:not(:placeholder-shown) ~ .field__name {
+  -webkit-transform: translate(-42px, -39px);
+          transform: translate(-42px, -39px);
+}
+
+.form__comment {
+  height: 120px;
+  resize: none;
+  padding: 12px 16px;
+}
+
+.comment__name {
+  display: block;
+  position: absolute;
+  top: 25px;
+  left: 16px;
+  -webkit-transition: -webkit-transform 500ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: -webkit-transform 500ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 500ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 500ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 500ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.form__input:not(:-moz-placeholder-shown) ~ .comment__name {
+  transform: translate(-15px, -44px);
+}
+.form__input:not(:-ms-input-placeholder) ~ .comment__name {
+  transform: translate(-15px, -44px);
+}
+.form__input:focus ~ .comment__name, .form__input:not(:placeholder-shown) ~ .comment__name {
+  -webkit-transform: translate(-15px, -44px);
+          transform: translate(-15px, -44px);
 }
 
 .header {

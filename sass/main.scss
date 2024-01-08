@@ -10,7 +10,10 @@
 @import './components/fonts';
 @import './components/logo';
 @import './components/social';
+
+@import './components/modal/backdrop';
 @import './components/modal/modal';
+@import './components/modal/form-field';
 
 // === LAYOUT ===
 @import './layout/header/header';
