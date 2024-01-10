@@ -220,10 +220,6 @@ body {
   cursor: pointer;
   border-color: #2196f3;
 }
-.form__input:focus {
-  outline-color: #2196f3;
-  border-color: #2196f3;
-}
 
 .form__ico {
   position: absolute;
@@ -289,6 +285,44 @@ body {
 .form__input:focus ~ .comment__name, .form__input:not(:placeholder-shown) ~ .comment__name {
   -webkit-transform: translate(-15px, -44px);
           transform: translate(-15px, -44px);
+}
+
+.form__check {
+  margin-top: 30px;
+}
+
+.check__label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-left: 12px;
+}
+
+.check__svg {
+  display: inline-block;
+  width: 16px;
+  height: 15px;
+  border: 2px solid #212121;
+  border-radius: 2px;
+  background-image: url("../images/full-check.svg");
+  background-size: cover;
+  background-position: center;
+  background-origin: border-box;
+}
+.check__input:focus + .check__svg {
+  outline: 2px solid #2196f3;
+}
+.check__input:checked + .check__svg {
+  border-color: #2196f3;
+  border-radius: 2px;
+  background-color: #2196f3;
+}
+
+.agree__txt {
+  margin-left: 8px;
 }
 
 .header {
