@@ -27,6 +27,12 @@
 }
 
 .card__decor {
+   // position: relative;
+
+   // overflow: hidden;
+}
+
+.card__thumb {
    position: relative;
 
    overflow: hidden;
@@ -36,6 +42,7 @@
    position: absolute;
    top: 0;
    left: 0;
+
    height: 294px;
    padding: 63px 24px;
 
