@@ -665,6 +665,14 @@
       <!-- <div class="backdrop" data-modal> -->
       <div class="backdrop is-hidden" data-modal>
          <div class="modal">
+            <!-- ===== BUTTON-CLOSE ===== -->
+            <button class="modal__btn close" type="button" data-modal-close>
+               <svg class="close__ico" width="11" height="11">
+                  <use href="./images/symbol.svg#close"></use>
+               </svg>
+            </button>
+            <!-- ====== -->
+
             <!-- FORM-TITLE -->
             <!-- ===== FORM-section ===== -->
             <form action="#" class="modal__form form" autocomplete="off">
@@ -747,17 +755,10 @@
                         id="agree"
                      />
 
-                     <!-- <span class="agree-box">
-                        <svg class="check__ico" width="16" height="15">
-                           <use
-                              href="./images/symbol.svg#form-check-agree"
-                           ></use>
-                        </svg>
-                     </span> -->
                      <span class="check__svg"></span
-                     ><span class="agree__txt">
+                     ><span class="check__txt">
                         Погоджуюся з розсилкою та приймаю&nbsp<span
-                           ><a class="check-link linl" href="#"
+                           ><a class="check__link" href="#"
                               >Умови договору</a
                            ></span
                         ></span
@@ -766,17 +767,10 @@
                </div>
 
                <!-- ===== BUTTON SUBMIT ====== -->
-               <button type="submit" class="modal-btn btn">Відправити</button>
+               <button type="submit" class="form__btn btn">Відправити</button>
 
                <!-- ===================== -->
             </form>
-
-            <!-- ===== BUTTON-CLOSE-я ===== -->
-            <button class="modal-btn-close" data-modal-close>
-               <svg class="close-ico" width="11" height="11">
-                  <use href="./images/symbol.svg#close"></use>
-               </svg>
-            </button>
          </div>
       </div>
 
